@@ -1,0 +1,39 @@
+.statistics{
+    &__wrapper{
+        border-radius: 16px;
+        border: 1px solid #ccc;
+        background: #FFF;
+        position: relative;
+        top: -80px;
+        display: flex;
+        justify-content: space-around;
+        padding: 51px 0;
+        
+        &-index{
+            color: #1F262E;
+            font-size: 48px;
+            font-weight: 600;
+
+            span{
+                color: #BC8AFC;
+            }
+        }
+
+        &-title{
+            color: #1F262E;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+    }
+}
+@media only screen and (max-width:640px){
+    .statistics{
+        top: -56px;
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+        }
+    
+    }
+}

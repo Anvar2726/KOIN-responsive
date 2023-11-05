@@ -1,0 +1,98 @@
+.app{
+    background-color: $background;
+    padding: 110px 0;
+
+    &__container{
+        position: relative;
+    }
+
+    &__title{
+        color: #FFF;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 130.5%; 
+        margin-bottom: 42px;
+        max-width: 813px;
+    }
+    
+    &__img1{
+        width: 200px;
+        height: 60px;
+        margin-right: 38px;
+    }
+
+    &__img3{
+        position: absolute;
+        right: 0;
+        bottom: -110px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .app{
+        padding-top: 56px;
+        padding-bottom: 38px;
+        &__title{
+            max-width: 463px;
+            font-size: 32px;
+        }
+
+        &__img3{
+            width: 273px;
+            height: 402px;
+            bottom: -38px;
+        }
+    }
+}
+@media only screen and (max-width:750px){
+    .app{
+        padding-top: 24px;
+        
+        &__title{
+            width: 359px;
+        }
+
+        &__img1{
+            width: 171px;
+            height: 54px;
+            margin-right: 23px;
+        }
+        &__img2{
+            width: 171px;
+            height: 54px; 
+        }
+    }
+}
+
+@media only screen and (max-width:640px){
+    .app{
+        &__container{
+            min-height: 621px;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__title{
+            max-width: 350px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        &__img3{
+            right: 25%;
+        }
+    }
+}
+@media only screen and (max-width:390px){
+    .app{
+        &__img1{
+            margin-right: 0;
+        }
+
+        &__img3{
+            right: 12%;
+        }
+    }
+}

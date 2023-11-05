@@ -1,0 +1,75 @@
+.benefits{
+    padding: 24px 0;
+
+    &__img{
+        max-width: 446px;
+        height: 582px;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__title{
+        color: $text-color;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 130.5%; 
+        margin-bottom: 16px;
+    }
+
+    &__text{
+        max-width: 522px;
+        width: 100%;
+        color: $text-color;
+        font-size: 20px;
+        line-height: 158%;
+        margin-bottom: 20px; 
+    }
+
+    &__list{
+
+        &-item{
+            color: $text-color;
+            font-size: 20px;
+            line-height: 158%; 
+            margin-bottom: 24px;
+            display: flex;
+
+            &::before{
+                content: url("/images/galochka.svg");
+                margin-right: 17px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .benefits{
+        padding-top: 38px;
+        &__img{
+            width: 287px;
+            height: 374px;
+        }
+
+        &__title{
+            font-size: 32px;
+        }
+        
+        &__text{
+            max-width: 365px;
+        }
+    }
+}
+
+@media only screen and (max-width:640px){
+    .benefits{
+
+        &__container{
+            display: block;
+        }
+        &__img{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@mixin main-btn{
+    background: $btn-bacground;
+    padding: 12px 25px;
+    color: $text-color;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: none; 
+    border-radius: 7px;
+    cursor: pointer;
+}
